@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Descargando PDF...</title>
+    <script>
+        window.onload = function() {
+            // Crear link de descarga
+            var link = document.createElement('a');
+            link.href = './ejercicio_carbonatacion.pdf';
+            link.download = 'ejercicio_carbonatacion.pdf';
+            document.body.appendChild(link);
+            link.click();
+        };
+    </script>
+</head>
+<body>
+    <h1>Descargando archivo...</h1>
+    <p>Si la descarga no comienza automáticamente, <a href="./ejercicio_carbonatacion.pdf" download>haz clic aquí</a>.</p>
+</body>
+</html>
